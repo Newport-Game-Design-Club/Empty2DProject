@@ -163,7 +163,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &39942054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -267,7 +267,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0500ec93673f94499f2ea9adff5476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 9
+  jumpableSurface:
+    serializedVersion: 2
+    m_Bits: 64
+  movementSpeed: 6
+  jumpForce: 7
 --- !u!1 &129316424
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +283,7 @@ GameObject:
   - component: {fileID: 129316427}
   - component: {fileID: 129316426}
   - component: {fileID: 129316425}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
